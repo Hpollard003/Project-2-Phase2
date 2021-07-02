@@ -1,20 +1,21 @@
-import render from 'dom-serializer';
 import React from 'react';
+import Comments from './Comments';
 
 const PostBtn = (props) => {
 
-    function handlePost(){
+    function handlePost() {
         console.log('Click')
     }
 
 
-        return(
+    return (
         <div>
-        <button onClick={handlePost}>Post</button>
-        
+            <h3>Write your comment below</h3>
+            <Comments />
+            <button onClick={handlePost}>Post</button>
         </div>
-        )
-    
+    )
+
 
 
 }
