@@ -1,5 +1,5 @@
 import React from 'react';
-import Comments from './Comments';
+
 
 const PostBtn = (props) => {
 
@@ -10,8 +10,6 @@ const PostBtn = (props) => {
 
     return (
         <div>
-            <h3>Write your comment below</h3>
-            <Comments />
             <button onClick={handlePost}>Post</button>
         </div>
     )
