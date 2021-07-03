@@ -19,9 +19,14 @@ class Post extends Component {
                 <h2>Post</h2>
                 <img src={img} alt='anime' />
                 {
-                this.state.comments.map((post) => {
-                    return <Comments {...post} />
-                })}
+                this.state.comments.map(({id , name , text}) => (
+                     <Comments
+                        id={id}
+                        name={name}    
+                        text={text}
+
+                     />
+                ))}
             </div>
         )    
     }
