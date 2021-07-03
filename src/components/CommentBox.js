@@ -1,17 +1,54 @@
-import React from 'react'
-// import Posts from '../container/Posts';
+import React, { Component } from 'react'
+import axios from 'axios'
 
-const CommentBox = () => (
-  <div>
 
-    <div >
+
+class CommentBox extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: '',
+      text: ''
+    }
+  }
+
+  changeHandler = (e) => {
+    this.setState({[e.target.name]: e.target.value})
+  }
+
+  submitHandler = (e) => {
+    e.preventDefault()
+    console.log(this.state)
+  }
+  
+  render() {
+    const {name, text} = this.state
+    return (
       <div>
-        <input type="text" />
+        <form onSubmit={this.submitHandler}>
+          <div>
+            <input 
+            type='text' 
+            name='name' 
+            placeholder='User ID' 
+            value={name}
+            onChange={this.changeHandler}
+            />
+          </div>
+          <div>
+            <input 
+            type='text' 
+            name='text' 
+            placeholder='Comment' 
+            value={text}
+            onChange={this.changeHandler}
+            />
+          </div>
+          <button type='submit'>Post</button>
+        </form>
       </div>
-    </div>
-
-
-  </div>
-);
+    )
+  }
+}
 
 export default CommentBox
