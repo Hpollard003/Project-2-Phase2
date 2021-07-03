@@ -1,6 +1,9 @@
 import './App.css';
-import Home from './components/Home';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
+import Home from './Pages/Home';
+import About from './Pages/About';
+import ImgPosts from './Pages/ImgPosts';
+import PageNotFound from './Pages/PageNotFound';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 
 function App() {
@@ -8,9 +11,10 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path='/home' component={Home}/>
-          <Home/>
-          
+          <Route exact path='/' component={Home} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/posts' component={ImgPosts} />
+          <Route exact path='*' component={PageNotFound} />
         </Switch>
       </Router>
     </div>

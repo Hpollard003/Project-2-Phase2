@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Comments from '../components/Comments'
-import DefaultPost from '../components/DefaultPost'
+import Comments from './Comments'
+import DefaultPost from './DefaultPost'
 
 class Post extends Component {
     state = {

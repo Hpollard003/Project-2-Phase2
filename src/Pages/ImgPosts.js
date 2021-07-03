@@ -1,14 +1,15 @@
 import React from 'react';
+import CommentBox from '../components/CommentBox';
+import Post from '../components/Post';
+import NavBar from '../components/NavBar';
 
-import CommentBox from './CommentBox';
-import Post from '../container/Post';
 
-
-class Home extends React.Component {
+class ImgPosts extends React.Component {
     render() {
         return (
             <div>
                 <h1>UrFeed</h1>
+                <NavBar />
                 <Post />
                 <h3>Write your comment below</h3>
                 <CommentBox />
@@ -18,4 +19,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home
+export default ImgPosts
