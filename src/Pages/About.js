@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 function About() {
     return (
         <div>
-            <h1>UrFeed About Page</h1>
+            <h1 className='display-2'>UrFeed About Page</h1>
             <NavBar />
             <h3>Website By : H Pollard III</h3>
             <h4>Phase 2 Project</h4>

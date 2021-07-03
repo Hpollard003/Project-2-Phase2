@@ -2,9 +2,9 @@ import img from '../imgs/Post2.jpg'
 
 const DefaultPost = () => {
     return (
-        <div>
+        <div className="card-img-top">
             <h2>Whats your favourite old anime?</h2>
-            <img src={img} alt='anime' />
+            <img className='img-thumbnail' src={img} alt='anime' />
         </div>
     )
 }

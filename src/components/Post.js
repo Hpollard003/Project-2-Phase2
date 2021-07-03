@@ -27,7 +27,10 @@ class Post extends Component {
         return (
             <div>
                 <DefaultPost />
+                <h2>Comments</h2>
+                <div>
                 {this.renderComments()}
+                </div>
             </div>
         )
     }

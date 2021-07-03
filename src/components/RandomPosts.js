@@ -10,7 +10,7 @@ function RandomPosts() {
     return (
         <div>
             <div>
-                <h1>UrFeed</h1>
+                <h1 className='display-2'>UrFeed</h1>
                 <NavBar />
                 <h2>Are dogs Happy idiots or Noble warriors with a bone to pick?</h2>
                 <img src={dog} alt='dog' />

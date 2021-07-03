@@ -1,15 +1,15 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
-import PostGallery from '../components/PostGallery';
+import HomeContent from '../components/HomeContent';
 
 
 class Home extends React.Component {
     render() {
         return (
             <div>
-                <h1>Welcome to UrFeed</h1>
+                <h1 className='display-2'>Welcome to UrFeed</h1>
                 <NavBar />
-                <PostGallery />
+                <HomeContent />
             </div>
         )
     }

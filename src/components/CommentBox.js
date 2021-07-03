@@ -27,9 +27,9 @@ class CommentBox extends Component {
   render() {
     const {name, text} = this.state
     return (
-      <div>
+      <div className='row'>
         <form onSubmit={this.submitHandler}>
-          <div>
+          <div className='col'>
             <input 
             type='text' 
             name='name' 
@@ -38,7 +38,7 @@ class CommentBox extends Component {
             onChange={this.changeHandler}
             />
           </div>
-          <div>
+          <div className='col'>
             <input 
             type='text' 
             name='text' 
@@ -47,7 +47,7 @@ class CommentBox extends Component {
             onChange={this.changeHandler}
             />
           </div>
-          <button type='submit'>Post</button>
+          <button className="btn btn-success" type='submit'>Post</button>
         </form>
       </div>
     )

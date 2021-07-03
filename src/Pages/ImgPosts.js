@@ -8,7 +8,7 @@ class ImgPosts extends React.Component {
     render() {
         return (
             <div>
-                <h1>UrFeed</h1>
+                <h1 className='display-2'>UrFeed</h1>
                 <NavBar />
                 <Post />
                 <h3>Write your comment below</h3>

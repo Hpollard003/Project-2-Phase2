@@ -3,6 +3,7 @@
 By : Hunter W Pollard III
 
 ## UrFeed (It's a instagram/ reddit forum ripoff)
+Old posts get archived
 
 Objectives
 1. Build a React single page application from scratch
