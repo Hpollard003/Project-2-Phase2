@@ -9,11 +9,10 @@ class Home extends React.Component {
         return (
             <div>
                 <h1>UrFeed</h1>
-                <Post/>
+                <Post />
                 <h3>Write your comment below</h3>
                 <CommentBox />
                 <PostBtn />
-                
             </div>
         )
     }

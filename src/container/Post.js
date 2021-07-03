@@ -1,34 +1,35 @@
 import React, { Component } from 'react'
 import Comments from '../components/Comments'
-import img from '../imgs/Post2.jpg'
+import DefaultPost from '../components/DefaultPost'
 
 class Post extends Component {
     state = {
-        comments : []
+        comments: []
     }
 
     componentDidMount() {
         fetch('http://localhost:3001/comments')
             .then(resp => resp.json())
-            .then((comments) => this.setState({comments}))
+            .then((comments) => this.setState({ comments }))
     }
-    
-    render(){
-        return(
-            <div className='cards'>
-                <h2>Post</h2>
-                <img src={img} alt='anime' />
-                {
-                this.state.comments.map(({id , name , text}) => (
-                     <Comments
-                        id={id}
-                        name={name}    
-                        text={text}
 
-                     />
-                ))}
+    renderComments = () => {
+        return this.state.comments.map(({ id, name, text }, ind) => (
+            <Comments className='card' key={ind}
+                id={id}
+                name={name}
+                text={text}
+            />
+        ))
+    }
+
+    render() {
+        return (
+            <div>
+                <DefaultPost />
+                {this.renderComments()}
             </div>
-        )    
+        )
     }
 
 
