@@ -17,8 +17,11 @@ class CommentBox extends Component {
   }
 
   submitHandler = (e) => {
-    e.preventDefault()
+    // e.preventDefault()
     console.log(this.state)
+    axios.post('http://localhost:3001/comments', this.state)
+    .then(resp => console.log(resp))
+    .catch(error => console.error(error))
   }
   
   render() {
