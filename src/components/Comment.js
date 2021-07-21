@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Comments = (props) => (
+const Comment = (props) => (
     <div>
         <div className='card m-2 bg-primary bg-gradient'>
             <div className='text-start'>
@@ -13,4 +13,4 @@ const Comments = (props) => (
     </div>
 );
 
-export default Comments
+export default Comment

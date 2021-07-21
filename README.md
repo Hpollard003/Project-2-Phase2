@@ -1,12 +1,18 @@
-# Project 2 Phase-2
+# React Project
 
-By : Hunter W Pollard III
+## UrFeed
+(It's a instagram/ reddit forum ripoff)
 
-## UrFeed (It's a instagram/ reddit forum ripoff)
-Old posts get archived
-
+## Usage
 Objectives
-1. Build a React single page application from scratch
-2. Apply your knowledge of components, props and state management
-3. Incorporate client-side routing
-4. GET and POST data in a mock up backend
+
+Build a React single page application from scratch
+Apply your knowledge of components, props and state management
+Incorporate client-side routing
+GET and POST data in a mock up backend
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

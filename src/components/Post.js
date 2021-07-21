@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Comments from './Comments'
+import Comment from './Comment'
 import DefaultPost from './DefaultPost'
 import CommentBox from './CommentBox'
 
@@ -20,7 +20,7 @@ class Post extends Component {
 
     renderComments = () => {
         return this.state.comments.map(({ id, name, text }, ind) => (
-            <Comments className='card' key={ind}
+            <Comment className='card' key={ind}
                 id={id}
                 name={name}
                 text={text}

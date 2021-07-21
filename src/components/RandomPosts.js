@@ -1,6 +1,6 @@
 import React from 'react'
 import dog from '../imgs/dog.jpg'
-import NavBar from '../components/NavBar';
+
 
 const text = {
     color: 'red'
