@@ -4,7 +4,7 @@
 (It's a instagram/ reddit forum ripoff)
 
 ## Usage
-Objectives
+### Objectives
 
 ### 1. Build a React single page application from scratch
 ### 2. Apply your knowledge of components, props and state management
