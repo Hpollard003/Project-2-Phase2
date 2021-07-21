@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Comments from './Comments'
 import DefaultPost from './DefaultPost'
+import CommentBox from './CommentBox'
 
 class Post extends Component {
     state = {
@@ -11,6 +12,10 @@ class Post extends Component {
         fetch('http://localhost:3001/comments')
             .then(resp => resp.json())
             .then((comments) => this.setState({ comments }))
+    }
+
+    addComment = (comment) => {
+        this.setState({comments : this.state.comments.concat(comment)})
     }
 
     renderComments = () => {
@@ -28,8 +33,10 @@ class Post extends Component {
             <div>
                 <DefaultPost />
                 <h2>Comments</h2>
+                <h3>Write your comment below</h3>
+                <CommentBox addComment={this.addComment}/>
                 <div>
-                {this.renderComments()}
+                    {this.renderComments()}
                 </div>
             </div>
         )

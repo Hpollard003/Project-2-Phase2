@@ -2,7 +2,7 @@ import React from 'react'
 import post1 from '../imgs/Post2.jpg'
 
 
-function HomeContent() {
+const HomeContent = () => {
 
     return (
 
@@ -11,7 +11,7 @@ function HomeContent() {
             <p>
                 Click on New Posts to see what everyones talking about this week
             </p>
-            <img src={post1} alt='anime'/>
+            <img src={post1} alt='anime' />
         </div>
 
     )

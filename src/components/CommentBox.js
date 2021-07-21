@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 
-
 class CommentBox extends Component {
   constructor(props) {
     super(props)
@@ -17,10 +16,10 @@ class CommentBox extends Component {
   }
 
   submitHandler = (e) => {
-    // e.preventDefault()
-    console.log(this.state)
+    e.preventDefault()
+    // console.log(this.state)
     axios.post('http://localhost:3001/comments', this.state)
-    .then(resp => console.log(resp))
+    .then(resp => this.props.addComment(resp.data))
     .catch(error => console.error(error))
   }
   

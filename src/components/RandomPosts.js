@@ -6,12 +6,11 @@ const text = {
     color: 'red'
 }
 
-function RandomPosts() {
+const RandomPosts = () => {
     return (
         <div>
             <div>
                 <h1 className='display-2'>UrFeed</h1>
-                <NavBar />
                 <h2>Are dogs Happy idiots or Noble warriors with a bone to pick?</h2>
                 <img src={dog} alt='dog' />
                 <h2 style={text}>Comments are off</h2>
