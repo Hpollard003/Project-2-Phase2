@@ -29,6 +29,11 @@ class CommentBox extends Component {
     // addComment is a function that takes props in this case it takes the resp data which contains new names and text
     .then(resp => this.props.addComment(resp.data))
     .catch(error => console.error(error))
+    // below this I'm clearing the input fields on my form after execution
+    this.setState({
+      name : "",
+      text : ""
+    })
   }
   
   render() {
