@@ -7,7 +7,7 @@ import axios from 'axios'
 
 class CommentBox extends Component {
 
-  // the class componet constructor calls the super method to initialize the state and has props as an arguement
+  // the class component constructor calls the super method to initialize the state and has props as an arguement
   constructor(props) {
     super(props)
     this.state = {

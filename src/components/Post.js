@@ -3,12 +3,13 @@ import Comment from './Comment'
 import DefaultPost from './DefaultPost'
 import CommentBox from './CommentBox'
 
+// I used class here because this component will rely on more of reacts specific class components
 class Post extends Component {
     state = {
         comments: []
     }
 
-    // when this componet mounts its setting up the json data in a way for react to read by fetching the data from the server
+    // when this component mounts its setting up the json data in a way for react to read by fetching the data from the server
     componentDidMount = () => {
         fetch('http://localhost:3001/comments')
             .then(resp => resp.json())

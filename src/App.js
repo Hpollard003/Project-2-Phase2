@@ -17,6 +17,7 @@ const App = () => {
           <Route exact path='/about' component={About} />
           <Route exact path='/posts' component={ImgPosts} />
           <Route exact path='/oldposts' component={RandomPosts} />
+          {/* the route below generates an error 404 page when any exact path above is not found */}
           <Route exact path='*' component={PageNotFound} />
         </Switch>
       </Router>
