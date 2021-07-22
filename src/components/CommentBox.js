@@ -41,8 +41,8 @@ class CommentBox extends Component {
     return (
       <div className='text-center'>
         {/* this form takes the user id and text from the user */}
-        <form onSubmit={this.submitHandler}>
-          <div className='col'>
+        <form id='form1' onSubmit={this.submitHandler}>
+          <div id='text' className='col'>
             <input 
             type='text' 
             name='name' 
@@ -51,7 +51,7 @@ class CommentBox extends Component {
             onChange={this.changeHandler}
             />
           </div>
-          <div className='col'>
+          <div id='text' className='col'>
             <input 
             type='text' 
             name='text' 

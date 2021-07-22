@@ -3,6 +3,7 @@ import Comment from './Comment'
 import DefaultPost from './DefaultPost'
 import CommentBox from './CommentBox'
 
+
 // I used class here because this component will rely on more of reacts specific class components
 class Post extends Component {
     state = {

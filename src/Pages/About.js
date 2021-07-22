@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ClickMe from '../components/ClickMe'
 
 const About = () => {
     return (
@@ -13,6 +13,7 @@ const About = () => {
                 <li>Utilize GET and POST requests</li>
                 <li>Demonstrate an understanding of components, props, and state</li>
             <h6>Its atually my feed since I control the forum pages because I dont have moderators</h6>
+            <ClickMe/>
         </div>
     )
 }
