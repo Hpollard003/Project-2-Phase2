@@ -5,29 +5,31 @@ class ClickMe extends Component {
         super(props)
         this.state = {
             word: '',
-            counter: 0
+            counter: 0,
+            prevState : 0 
         }
     }
 
     // this function sets the new input value of word and tracks the word length
     changeHandler = (e) => {
         this.setState({ word: e.target.value })
-        this.setState({ counter: e.target.value.length })
+        this.setState({ counter: e.target.value.length})
     }
 
     // this function clears the input value
     submiHandler = (e) => {
         e.preventDefault()
         this.setState({
-            word: ""
+            word: "",
+            prevState : this.state.counter + this.state.prevState
         })
-        return(<h2>{this.state.counter}</h2>)
+        return(<h2>{this.state.counter }</h2>)
     }
 
     // when called it displays the counter
     counterDisplay = () => {
         const count = document.getElementById('counter')
-        count.innerText = `${this.state.counter}`
+        count.innerText = `${this.state.counter + this.state.prevState}`
         
     }
 
