@@ -13,7 +13,7 @@ class ClickMe extends Component {
     // this function sets the new input value of word and tracks the word length
     changeHandler = (e) => {
         this.setState({ word: e.target.value })
-        this.setState({ counter: e.target.value.length})
+        // this.setState({ counter: e.target.value.length})
     }
 
     // this function clears the input value
@@ -21,17 +21,17 @@ class ClickMe extends Component {
         e.preventDefault()
         this.setState({
             word: "",
-            prevState : this.state.counter + this.state.prevState
+            counter : this.state.counter + this.state.word.length
         })
         return(<h2>{this.state.counter }</h2>)
     }
 
     // when called it displays the counter
-    counterDisplay = () => {
-        const count = document.getElementById('counter')
-        count.innerText = `${this.state.counter + this.state.prevState}`
+    // counterDisplay = () => {
+    //     const count = document.getElementById('counter')
+    //     count.innerText = `${this.state.counter + this.state.prevState}`
         
-    }
+    // }
 
     render() {
         const { word } = this.state
@@ -50,8 +50,8 @@ class ClickMe extends Component {
                         />
                         
                     </div>
-                    <button type='submit'  onClick={this.counterDisplay}>Click Me</button>
-                    <h2 id="counter"> </h2>
+                    <button type='submit' >Click Me</button>
+                    <h2 id="counter"> {this.state.counter}</h2>
                 </form>
                 
             </div>
